@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --btn-color: #e6533c;
+  --text-color: #ffffff;
+  --paragraph-color: #c9ccd9;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background:#777777;
+}
+/* navbar start  */
+.navbar-main {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 70px;
+
+}
+.navbar-main h2{
+  color: var(--btn-color);
+  font-size: 36px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-color);
+  
+}
+.nav-link li a:hover {
+ color: skyblue;
+
+}
+
+#nav-color{
+  background-color: var(--btn-color);
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.menu{
+  display: none;
+}
+ .bx-menu {
+  color: var(--text-color);
+  font-size: 30px;
+}
+/* navbar end */
+
+
+/* bennar div start */
+
+.benner{
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+   padding: 30px 70px;
+}
+.bennar-content{
+  width: 42%;
+}
+.bennar-content h1{
+font-size: 60px;
+font-weight: bold;
+color: var(--text-color);
+margin-top: 50px;
+}
+.bennar-content p{
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color:var(--paragraph-color);
+padding-top: 20px;
+}
+.btn{
+  font-size: 16px;
+font-weight: 600;
+  background-color: var(--btn-color);
+  padding: 10px 20px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 20px;
+}
+.btn-1{
+font-size: 16px;
+font-weight: 600;
+  padding: 10px 20px;
+  color: var(--text-color);
+  border: 1px solid  #111111;
+  border-radius: 20px;
+  background-color: #777777;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bannar-btn{
+  gap: 10px;
+  margin-top:20px;
+}
+.benner img{
+ 
+}
+/* bannar div end */
