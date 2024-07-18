@@ -11,17 +11,21 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  background:#777777;
+  background:#111111;
 }
+
 /* navbar start  */
+.header-section{
+ background-color:  linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+   max-width: 1440px;
+}
 .navbar-main {
-  max-width: 1440px;
+ width: 90%;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 auto;
-  padding: 30px 70px;
-
+  margin:20px auto;
+text-align: center;
 }
 .navbar-main h2{
   color: var(--btn-color);
@@ -30,12 +34,13 @@ body {
 ul {
   display: flex;
   list-style: none;
-  gap: 20px;
-  border: 1px solid black;
+  gap: 40px;
+  border: 1px solid rgb(92, 79, 79);
   text-align: center;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 10px 10px 0;
+  border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
 }
 ul li a {
   text-decoration: none;
@@ -50,7 +55,7 @@ ul li a {
 
 #nav-color{
   background-color: var(--btn-color);
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 20px;
 }
 .menu{
@@ -66,19 +71,24 @@ ul li a {
 /* bennar div start */
 
 .benner{
-  max-width: 1440px;
+  max-width: 90%;
   display: flex;
   justify-content: space-between;
-   padding: 30px 70px;
+  margin: 0 auto;
 }
 .bennar-content{
-  width: 42%;
+ width: 500px;
 }
 .bennar-content h1{
-font-size: 60px;
-font-weight: bold;
+font-size: 4rem;
+font-weight: 900;
 color: var(--text-color);
 margin-top: 50px;
+}
+.italic{
+  font-size: italic;
+  font-size: 4rem;
+  font-weight: 900;
 }
 .bennar-content p{
 font-size: 18px;
@@ -88,8 +98,8 @@ color:var(--paragraph-color);
 padding-top: 20px;
 }
 .btn{
-  font-size: 16px;
-font-weight: 600;
+  font-size: 18px;
+font-weight: 400;
   background-color: var(--btn-color);
   padding: 10px 20px;
   color: var(--text-color);
@@ -97,20 +107,113 @@ font-weight: 600;
   border-radius: 20px;
 }
 .btn-1{
-font-size: 16px;
-font-weight: 600;
+font-size: 18px;
+font-weight: 400;
   padding: 10px 20px;
   color: var(--text-color);
-  border: 1px solid  #111111;
+  border: 1px solid  #777777;
   border-radius: 20px;
-  background-color: #777777;
+  background-color: #111111;
  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .bannar-btn{
   gap: 10px;
   margin-top:20px;
 }
-.benner img{
- 
+
+/* bannar-img */
+
+.bannar-img{
+  height: 550px;
+  position: relative;
+  margin: 0 auto;
 }
+.video-tutorial{
+  position: absolute;
+background-color: rgba(48, 48, 48, 0.54);
+  bottom: 15%;
+ left: -22%;
+  width: 180px;
+  height: 80px;
+  
+}
+.display{
+  display: flex;
+  padding: 8px 15px;
+ align-items: center;
+}
+.display p{
+width: 30px;
+height: 30px;
+background-color: #e6533c;
+border-radius: 40px;
+}
+.display h2{
+  color: var(--text-color);
+  padding: 0 10px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.video-tutorial p{
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 400;
+}
+.workout-video{
+   position: absolute;
+background-color: rgba(48, 48, 48, 0.54);
+  top: 27%;
+ right: -10%;
+  width: 180px;
+  height: 80px;
+}
+.workout-video h2{
+  color: var(--text-color);
+  padding: 0 10px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+.workout-video p{
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 400;
+}
+
 /* bannar div end */
+
+
+/* resposive design Tablet */
+@media screen and (max-width:900px){
+  /* header-section start */
+  .benner{
+    flex-direction: column;
+  }
+  .bannar-img{
+    margin-top: 40px;
+  }
+  .workout-video{
+  top: 16%;
+ right: -15%;
+}
+.video-tutorial{
+background-color: rgba(48, 48, 48, 0.54);
+  bottom: 15%;
+ left:-3%;
+}
+}
+/* resposive design mobile */
+@media screen and (max-width:576px){
+.nav-link{
+  display: none;
+}
+.menu{
+  display: block;
+}
+.bennar-content{
+ width: 400px;
+}
+}
