@@ -87,6 +87,7 @@ ul li a {
   margin-top: 50px;
 }
 .italic {
+  font-family: 'Playwrite AT', cursive;
   font-style: italic;
   font-size: 4rem;
   font-weight: 100;
@@ -424,6 +425,111 @@ select {
 }
 /* calculator-section ends */
 
+/* Meet Our Team section starts  */
+.meet-our-content {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.meet-our-content h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-color);
+  padding: 10px 0;
+}
+.meet-our-content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.trainer-img {
+  width: 1060px;
+  display: grid;
+  background-color: #222222;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.trainer-img img {
+  width: 350px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.trainer-name {
+  position: relative;
+}
+.trainer-name h5 {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-color);
+  bottom: 25%;
+  left: 10%;
+}
+.trainer-name p {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+  bottom: 15%;
+  left: 10%;
+}
+
+/* fotter-section start */
+.footer-section {
+  background-color: #222222;
+ margin-top:40px;
+  display: grid;
+  grid-template-columns: 400px 800px;
+  text-align: start;
+  padding: 30px 80px;
+}
+.footer-service {
+  display: grid;
+grid-template-columns: 350px 350px;
+  text-align: left;
+
+  margin-left: 50px;
+}
+
+.footer-content h2{
+  font-size:2rem;
+  font-weight: 600;
+  color:var(--btn-color);
+  padding: 20px 0;
+}
+
+.footer-content p{
+  font-size:14px;
+  font-weight: 400;
+  color:var(--text-color);
+  line-height: 18px;
+}
+.footer-service h5{
+  font-size: 1.5rem;
+  color: var(--paragraph-color);
+  font-weight:600;
+  padding:  10px 0;
+}
+.footer-service p{
+  color: #5f5959;
+  font-size: 14px;
+  padding:  5px 0;
+}
+.my-identity{
+  text-align: center;
+  color: var(--text-color);
+  margin: 30px 0;
+  padding-top: 20px;
+  border-top:1px solid #5f5959;
+}
+
+/* Meet Our Team section ends  */
+
 /* resposive design Tablet */
 @media screen and (max-width: 900px) {
   /* header-section start */
@@ -457,27 +563,41 @@ select {
     width: 300px;
     height: 340px;
   }
-/* calculator-section start */
-.calculator-section h2{
-  text-align: start;
-  padding-left: 10px;
-}
-.calculator-section p{
-  text-align: start;
-  padding: 10px;
-}
+  /* calculator-section start */
+  .calculator-section h2 {
+    text-align: start;
+    padding-left: 10px;
+  }
+  .calculator-section p {
+    text-align: start;
+    padding: 10px;
+  }
   .calculate-bmi {
     flex-direction: column;
   }
   .calculator {
-    margin:10;
+    margin: 10px;
     align-items: start;
   }
   .calculator-form {
-    margin:10;
+    margin: 10px;
   }
-  .calculate-bm{
-    margin:10;
+  .calculate-bmi {
+    padding: 10px;
+  }
+  .trainer-img {
+    width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+
+  /* foter-section start */
+  .footer-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-service > div {
+    margin-bottom: 20px;
   }
 }
 
@@ -535,18 +655,27 @@ select {
   #activity-factor {
     width: 320px;
   }
-   .calculator-form {
+  .calculator-form {
     margin: 10px;
   }
-.calculator-form {
-  width: 350px;
-  margin: 10px ;
-}
-.calculator{
-  padding: 15px;
-}
-.calculate-bmi{
-  padding: 15px;
-}
+  .calculator-form {
+    width: 350px;
+    margin: 10px;
+  }
+  .calculator {
+    padding: 15px;
+  }
+  .calculate-bmi {
+    padding: 15px;
+  }
   /* calculator-section ends */
+  .trainer-img {
+    width: 350px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+    .footer-service {
+   grid-template-columns: 1fr;
+    align-items: center;
+  }
 }
