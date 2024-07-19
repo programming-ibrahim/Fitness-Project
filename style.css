@@ -87,9 +87,9 @@ ul li a {
   margin-top: 50px;
 }
 .italic {
-  font-size: italic;
+  font-style: italic;
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 100;
 }
 .bennar-content p {
   font-size: 16px;
@@ -196,6 +196,10 @@ ul li a {
 /* bannar div end */
 
 /* Change Your Habits section start */
+.main-section {
+  max-width: 1440px;
+}
+
 .change-habites-section {
   max-width: 90%;
   margin: 0 auto;
@@ -261,10 +265,11 @@ ul li a {
   margin: 0 auto;
   background-color: #222222;
   border-radius: 20px;
+  padding: 30px;
 }
 .run-content {
-  width: 450px;
-  padding: 20px 40px;
+  width: 440px;
+  padding: 20px;
 }
 .run-content h2 {
   font-size: 3rem;
@@ -284,7 +289,6 @@ ul li a {
 .run-img {
   width: 450px;
   height: 330px;
-  padding: 20px 30px;
   border-radius: 40px;
   text-align: center;
 }
@@ -295,7 +299,7 @@ ul li a {
   padding: 10px 50px;
   color: var(--text-color);
   border: none;
-  margin: 20px;
+  margin-top: 20px;
   border-radius: 20px;
   transition: background-color 0.5s ease;
 }
@@ -304,6 +308,121 @@ ul li a {
   background-color: #4535c1;
 }
 /* Run an Extra Mile Easily section ends */
+
+/* calculator-section :start */
+.calculator-section {
+  margin: 40px auto;
+}
+.calculator-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+}
+.calculator-section p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.calculate-bmi {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 30px 80px;
+}
+.calculator-section caption {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text-color);
+  text-align: start;
+  padding: 10px 0;
+}
+.calculator {
+  width: 300px;
+  margin: 20px 50px;
+}
+table {
+  background-color: #222222;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  color: #5f5959;
+  font-size: 16px;
+  border: 1px solid #5f5959;
+  padding: 10px;
+  text-align: center;
+  width: 230px;
+}
+.calculator-form {
+  width: 550px;
+  margin: 10px 50px;
+  align-items: center;
+}
+.calculator-form h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text-color);
+  text-align: start;
+  padding: 10px 0;
+}
+.calculator-form p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+  text-align: start;
+  line-height: 24px;
+}
+input {
+  width: 250px;
+  height: 40px;
+  margin: 5px;
+  color: #5f5959;
+  background-color: #ffffff1a;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+select {
+  width: 250px;
+  height: 40px;
+  margin: 5px;
+  color: #5f5959;
+  padding: 8px;
+  background-color: #ffffff1a;
+  border-radius: 10px;
+  border: none;
+}
+
+#activity-factor {
+  width: 510px;
+  height: 40px;
+  margin: 5px;
+  padding: 8px;
+  background-color: #ffffff1a;
+  box-sizing: 10px;
+}
+#submit {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  width: 110px;
+  font-size: 16px;
+  border-radius: 20px;
+  margin: 15px;
+  transition: background-color 0.5s ease;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #4535c1;
+}
+/* calculator-section ends */
 
 /* resposive design Tablet */
 @media screen and (max-width: 900px) {
@@ -330,10 +449,35 @@ ul li a {
     grid-template-columns: repeat(2, 1fr);
   }
   /* habits section img part end */
-
+  .run-content {
+    width: 400px;
+    padding: 10px;
+  }
   .run-img {
     width: 300px;
-    height: 370px;
+    height: 340px;
+  }
+/* calculator-section start */
+.calculator-section h2{
+  text-align: start;
+  padding-left: 10px;
+}
+.calculator-section p{
+  text-align: start;
+  padding: 10px;
+}
+  .calculate-bmi {
+    flex-direction: column;
+  }
+  .calculator {
+    margin:10;
+    align-items: start;
+  }
+  .calculator-form {
+    margin:10;
+  }
+  .calculate-bm{
+    margin:10;
   }
 }
 
@@ -368,15 +512,41 @@ ul li a {
     margin: 0 auto;
   }
   .run-content {
-  width: 450px;
-  padding: 10px;
-}
-.run-img {
-    width: 450px;
-    height: 380px;
-    padding: 20px;
-    margin: 0 auto;
+    width: 320px;
   }
-}
-  
+  .run-img {
+    width: 320px;
+    height: 200px;
+    margin: 20px auto 0;
+  }
+  .btn-2 {
+    padding: 10px 80px;
+  }
 
+  /* calculator-section start */
+
+  input {
+    width: 150px;
+  }
+  select {
+    width: 150px;
+  }
+
+  #activity-factor {
+    width: 320px;
+  }
+   .calculator-form {
+    margin: 10px;
+  }
+.calculator-form {
+  width: 350px;
+  margin: 10px ;
+}
+.calculator{
+  padding: 15px;
+}
+.calculate-bmi{
+  padding: 15px;
+}
+  /* calculator-section ends */
+}

@@ -1,0 +1,138 @@
+<!-- Trainings and Exercises section starts -->
+<section class="training-exercies">
+
+  <h2>Trainings and Exercises</h2>
+  <p>The training exerciese rules are given below,We believe fitness should be accessible to everyone.</p>
+
+  <div class="training-exercies-img">
+    <div class="training-exercies-part1">
+      <img src="images/exercise1.jpg" class="exercise-images" alt="">
+      <p></p>
+    </div>
+
+    <div class="training-exercies-part2">
+      <img src="images/exercise2.png" alt="">
+      <p></p>
+    </div>
+
+    <div class="training-exercies-part">
+      <img src="images/exercise4.png" class="exercise-images" alt="">
+      <p></p>
+    </div>
+    <div class="training-exercies-part">
+      <img src="images/exercise4.png" alt="">
+      <p></p>
+    </div>
+    <div class="training-exercies-part">
+      <img src="images/exercise5.jpg" alt="">
+      <p></p>
+    </div>
+    <div class="training-exercies-part">
+      <img src="images/exercise6.jpg" alt="">
+      <p></p>
+    </div>
+  </div>
+
+</section>
+<!-- Trainings and Exercises section ends -->
+
+<style>
+/* Trainings and Exercises section starts */
+/* .training-exercies{
+width: 90%;
+margin: 0 auto;
+}
+.training-exercies h2{
+font-size: 3rem;
+font-weight: 900;
+color: var(--text-color);
+text-align: start;
+padding: 10px 0;
+margin-top: 40px;
+}
+.training-exercies p{
+font-size: 14px;
+font-weight: 400;
+color: var(--paragraph-color);
+text-align: start;
+line-height: 24px;
+}
+
+
+.training-exercies-img{
+width:1060px;
+height: 450px;
+display: grid;
+grid-template-columns:repeat(3,1fr)
+}
+.exercise-images{
+width: 200px;
+height: 200px;
+}
+.training-exercises-part1{
+width: 250px;
+height: 150px;
+} */
+.training-exercises {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px;
+}
+
+.training-exercises h2 {
+font-size: 3rem;
+font-weight: 900;
+color: var(--text-color);
+text-align: start;
+padding: 10px 0;
+margin-top: 40px;
+}
+
+.training-exercises p {
+font-size: 14px;
+font-weight: 400;
+color: var(--paragraph-color);
+text-align: start;
+line-height: 24px;
+}
+
+.training-exercises-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.training-exercises-part {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+.exercise-image {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+.training-exercises-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 480px) {
+.training-exercises-grid {
+grid-template-columns: 1fr;
+}
+.training-exercises-part {
+padding: 10px;
+}
+.exercise-image {
+height: 100px;
+}
+}
+</style>
+/* Trainings and Exercises section ends */

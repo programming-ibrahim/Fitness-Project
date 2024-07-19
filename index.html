@@ -33,7 +33,7 @@
     <!-- bennar div start -->
     <div class="benner">
       <div class="bennar-content">
-        <h1>Get body in <em class="italic">shape</em> & stay healthy</h1>
+        <h1>Get body in <span class="italic">shape</span> & stay healthy</h1>
         <p>Finally, listen to your body and make adjustments as needed. Consult with healthcare or fitness professionals
           to tailor
           a plan that fits your specific needs and goals.</p>
@@ -66,7 +66,7 @@
   </header>
 
 
-  <main>
+  <main class="main-section">
     <!-- Change Your Habits section start -->
      <section class="change-habites-section">
       <div class="change-habites-content">
@@ -114,7 +114,72 @@
   <img src="images/run.jpg" class="run-img" alt="">
 
 </section>
+
 <!-- Run an Extra Mile Easily section ends-->
+
+
+
+<!-- calculator-section start -->
+<section class="calculator-section">
+<h2>BMI Calculator</h2>
+<p>Create your personalized fitness plan with our easy-to-use fitness calculator form.</p>
+<div class="calculate-bmi">
+  <div class="calculator">
+    <table>
+      <caption>BMI Calculator Chart</caption>
+      <tr>
+        <th>BMI</th>
+        <th>Weight Status</th>
+      </tr>
+  
+      <tr>
+        <td>Below 18.5</td>
+        <td>Underweight</td>
+      </tr>
+  
+      <tr>
+        <td>18.5 - 24.9</td>
+        <td>healthy</td>
+      </tr>
+  
+      <tr>
+        <td>25.0 - 29.9</td>
+        <td>Overweight</td>
+  
+      </tr>
+      <tr>
+        <td>30.0 - and Above</td>
+        <td>Obese</td>
+      </tr>
+  
+    </table>
+  </div>
+  <div class="calculator-form">
+    <h2>Calculate your BMI</h2>
+    <p>To calculate your BMI, divide your weight in kilograms by your height in meters squared.</p>
+  
+    <input type="height" name="height" placeholder="Height/cm">
+    <input type="number" placeholder="Weight/kg">
+    <br>
+    <input type="number" placeholder="Age">
+    <select name="sex">
+      <option value="Sex">Sex</option>
+      <option value="Male">Male</option>
+      <option value="saab">Female</option>
+      <option value="Other">Other</option>
+  
+    </select>
+    <br>
+    <select name="text" id="activity-factor">
+      <option value="text"  >Select an activity factor</option>
+    </select>
+    <br>
+    <input type="submit" value="Calculate" id="submit">
+  </div>
+</div>
+
+</section>
+<!-- calculator-section ends -->
   </main>
 </body>
 
