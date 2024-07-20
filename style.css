@@ -13,7 +13,10 @@ body {
   font-family: 'Inter', sans-serif;
   background: #111111;
 }
-
+img{
+  width: 100%;
+  height: 100%;
+}
 /* navbar start  */
 .header-section {
   background-color: linear-gradient(
@@ -189,7 +192,7 @@ ul li a {
 }
 .workout-video p {
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--paragraph-color);
   text-align: center;
   font-weight: 400;
 }
@@ -478,10 +481,71 @@ select {
   bottom: 15%;
   left: 10%;
 }
+/*  customers say section starts */
+.review-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.review-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 10px 0;
+  text-align: center;
+}
+.review-content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+  line-height: 24px;
+}
+.client-review {
+  display: flex;
+  justify-content: space-between;
+text-align: center;
+  margin: 40px auto;
+}
+.review{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  width: 450px;
+  transition: background-color 0.5s ease;
+  margin-top: 20px;
+}
+.review:hover{
+  background-color: #5f5959;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.review img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.review h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 10px 0;
+  text-align: center;
+}
+.review p {
+  width: px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+  line-height: 20px;
+  text-align: center;
+  padding-bottom:10px;
+}
+
+/*  customers say section ends */
 
 /* fotter-section start */
 
 footer {
+ max-width: 100%;
   background-color: #222222;
 }
 .footer-section {
@@ -561,16 +625,16 @@ footer {
   }
   .run-img {
     width: 300px;
-    height: 340px;
+    height: 350px;
   }
   /* calculator-section start */
   .calculator-section h2 {
     text-align: start;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .calculator-section p {
     text-align: start;
-    padding: 10px;
+    padding: 20px;
   }
   .calculate-bmi {
     flex-direction: column;
@@ -590,7 +654,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     margin: 30px auto;
   }
-
+.client-review {
+  width: 600px;
+ flex-direction: column;
+  margin: 20px auto;
+  text-align: center;
+}
   /* foter-section start */
   .footer-content {
     width: 380px;
@@ -634,16 +703,17 @@ footer {
   .run-section {
     flex-direction: column;
     margin: 0 auto;
+    padding: 15px;
   }
   .run-content {
     width: 320px;
   }
   .run-img {
-    width: 320px;
+    width: 350px;
     height: 200px;
-    margin: 20px auto 0;
   }
   .btn-2 {
+    margin: 20px 0;
     padding: 10px 80px;
   }
 
@@ -678,6 +748,21 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     margin: 20px auto;
   }
+.client-review {
+  width: 360px;
+  margin: 0 auto;
+}
+ .review{
+  padding: 8px;
+  width: 360px;
+  margin:20px auto ;
+}
+.review p {
+  width: 350px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
   .footer-section {
     padding: 20px;
   }
