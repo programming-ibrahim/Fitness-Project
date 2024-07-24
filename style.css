@@ -13,7 +13,7 @@ body {
   font-family: 'Inter', sans-serif;
   background: #111111;
 }
-img{
+img {
   width: 100%;
   height: 100%;
 }
@@ -429,6 +429,7 @@ select {
 /* calculator-section ends */
 
 /* Meet Our Team section starts  */
+
 .meet-our-content {
   width: 400px;
   margin: 40px auto;
@@ -456,10 +457,10 @@ select {
   padding: 8px;
   border-radius: 10px;
 }
-.trainer-img img {
+.trainer-name img {
   width: 340px;
   height: 250px;
-  padding: 8px;
+  padding: 5px;
   border-radius: 15px;
 }
 .trainer-name {
@@ -481,71 +482,78 @@ select {
   bottom: 15%;
   left: 10%;
 }
-/*  customers say section starts */
-.review-content {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-.review-content h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--text-color);
-  padding: 10px 0;
-  text-align: center;
-}
-.review-content p {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--paragraph-color);
-  line-height: 24px;
-}
-.client-review {
-  display: flex;
-  justify-content: space-between;
-text-align: center;
-  margin: 40px auto;
-}
-.review{
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 10px;
-  width: 450px;
-  transition: background-color 0.5s ease;
-  margin-top: 20px;
-}
-.review:hover{
-  background-color: #5f5959;
+/* client-message section start */
+.client-message {
+  width: 90%;
+  background-color: #222222;
+  margin: 30px auto;
   border-radius: 20px;
-  cursor: pointer;
 }
-.review img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.client-text {
+  width: 450px;
+  padding: 40px 0 0 50px;
 }
-.review h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.client-text h3 {
+  font-size: 2rem;
   color: var(--text-color);
-  padding: 10px 0;
-  text-align: center;
+  padding-top: 20px;
+  font-weight: 600;
 }
-.review p {
-  width: px;
+.client-text p {
   font-size: 16px;
-  font-weight: 400;
   color: var(--paragraph-color);
-  line-height: 20px;
-  text-align: center;
-  padding-bottom:10px;
+  padding-top: 20px;
+  text-align: start;
+  font-weight: 400;
+}
+.message-box {
+  display: flex;
+}
+.client-message-box {
+  width: 400px;
+  padding: 20px 0 0 50px;
+}
+.client-message-box input {
+  width: 340px;
+  height: 50px;
+  padding: 20px;
+  background-color: #646060;
+}
+.client-message-box label {
+  color: var(--paragraph-color);
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.client-message-box textarea {
+  background-color: #646060;
+  padding: 10px;
+  margin: 10px;
+}
+.message-btn {
+  background-color: var(--btn-color);
+  padding: 10px 50px;
+  color: var(--text-color);
+  font-size: 18px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-/*  customers say section ends */
+.message-btn:hover {
+  cursor: pointer;
+  background-color: #4535c1;
+}
+
+/* client-message section ends */
 
 /* fotter-section start */
 
 footer {
- max-width: 100%;
+  max-width: 100%;
   background-color: #222222;
 }
 .footer-section {
@@ -580,16 +588,20 @@ footer {
   font-weight: 600;
   padding: 10px 0;
 }
-.footer-service p {
+.footer-service a {
   color: #5f5959;
   font-size: 14px;
   padding: 5px 0;
+  display: flex;
+  text-decoration: none;
 }
 .my-identity {
   text-align: center;
   color: var(--paragraph-color);
   padding: 30px 0;
   border-top: 1px solid #5f5959;
+  width: 92%;
+  margin: 0 auto;
 }
 
 /* Meet Our Team section ends  */
@@ -649,17 +661,12 @@ footer {
   .calculate-bmi {
     padding: 10px;
   }
+
   .trainer-img {
-    width: 700px;
+    width: 500px;
     grid-template-columns: repeat(2, 1fr);
-    margin: 30px auto;
+    margin: 20px auto;
   }
-.client-review {
-  width: 600px;
- flex-direction: column;
-  margin: 20px auto;
-  text-align: center;
-}
   /* foter-section start */
   .footer-content {
     width: 380px;
@@ -679,6 +686,7 @@ footer {
   .nav-link {
     display: none;
   }
+
   .menu {
     display: block;
   }
@@ -710,9 +718,9 @@ footer {
     width: 320px;
   }
   .run-img {
-    width: 330px;
-    height: 200px;
-    padding-bottom:8px ;
+    width: 430px;
+    height: 250px;
+    padding: 10px;
   }
   .btn-2 {
     margin: 20px 0;
@@ -746,25 +754,28 @@ footer {
   }
   /* calculator-section ends */
   .trainer-img {
-    width: 350px;
+    width: 450px;
     grid-template-columns: repeat(1, 1fr);
     margin: 20px auto;
   }
-.client-review {
-  width: 360px;
-  margin: 0 auto;
-}
- .review{
-  padding: 8px;
-  width: 360px;
-  margin:20px auto ;
-}
-.review p {
-  width: 350px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
+  .trainer-name img {
+    width: 430px;
+    height: 250px;
+    padding: 8px;
+    border-radius: 15px;
+  }
+  /* client message start */
+  .message-box {
+    flex-direction: column;
+  }
+  .client-text {
+    width: 400px;
+    padding: 40px 0 0 20px;
+  }
+  .client-message-box {
+    padding: 20px 0 0 20px;
+  }
+  /* client messese ends */
   .footer-section {
     padding: 20px;
   }
@@ -772,5 +783,18 @@ footer {
     grid-template-columns: 1fr;
     align-items: center;
     margin-left: 0;
+  }
+}
+/* resposive design mobile */
+@media screen and (max-width: 450px) {
+  .run-img {
+    width: 340px;
+    height: 200px;
+    padding: 8px;
+  }
+  /* calculator-section ends */
+  .trainer-img {
+    width: 350px;
+    margin: 0;
   }
 }
