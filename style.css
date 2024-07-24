@@ -514,7 +514,7 @@ select {
   padding: 20px 0 0 50px;
 }
 .client-message-box input {
-  width: 340px;
+  width: 320px;
   height: 50px;
   padding: 20px;
   background-color: #646060;
@@ -588,7 +588,7 @@ footer {
   font-weight: 600;
   padding: 10px 0;
 }
-.footer-service a {
+.footer-part a {
   color: #5f5959;
   font-size: 14px;
   padding: 5px 0;
